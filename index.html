@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Zero Waste Products </title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuvph8U7vDA04nZbd-FkeHTO4TAW-lG4Q&callback=initMap" async defer></script>
+
+
+</head>
+
+<body>
+
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img src="static/images/negd.png" alt="image"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+                    <li class="nav-item"><a class="btn btn-primary" href="#">LOGIN</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- multiple images carousel -->
+    <div id="imageCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="static\images\hover1.jpg" class="d-block w-10"  alt="Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="static\images\hover2.jpg" class="d-block w-10" alt="Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="static\images\hover3.jpg" class="d-block w-10" alt="Image 3">
+            </div>
+
+            <!-- Add more images as needed -->
+        </div>
+        <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- for adding the space between two sections -->
+    <div style="height:50px;"></div>
+
+    <section id="home" class="hero d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="hero-content">
+                        <h2>Highest Reusable Products</h2>
+                        <p>Stainless Steel Water Bottles</p>
+                        <a href="#" class="btn btn-primary">Call to action</a>
+                        <p class="reviews mt-3">500+ users &bull; ★★★★</p>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="hero-image">
+                        <img src="static\images\stainless.png" class="img-fluid" alt="Illustration">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="features py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature text-center">
+
+                        <!-- first bullet image -->
+                        <img src="static\images\bar-shampoo.png" class="img-fluid" alt="Illustration">
+                        <a href="#" class="btn btn-primary">Solid Shampoo Bars</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature text-center">
+
+                        <!-- second bullet image -->
+                        <img src="static\images\Jute_Reusable.jpg" class="img-fluid" alt="Illustration">
+                        <a href="#" class="btn btn-primary">Eco-Friendly Shopping Bags</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature text-center">
+
+                        <!-- third bullet image -->
+                        <img src="static\images\bee.jpg" class="img-fluid" alt="Illustration">
+                        <a href="#" class="btn btn-primary">Beeswax Food Wraps</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="courses" class="scroll-content py-5">
+        <div class="container">
+            <!-- First row, text on left, image on right -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="scroll-item">
+                        <h2>Sustainable Home Goods</h2>
+                        <p>Bamboo Cutlery Sets  </p>
+                        <ul>
+                            <li>Lorem ipsum dolor</li>
+                            <li>Lorem ipsum dolor</li>
+                            <li>Lorem ipsum dolor</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="scroll-item">
+
+
+                        <img src="static\images\cut.jpg" class="img-fluid" alt="Illustration">
+                    </div>
+                </div>
+            </div>
+            <!-- Second row, image on left, text on right -->
+            <div class="row mt-4">
+                <div class="col-md-6 text-center">
+                    <div class="scroll-item">
+                        <img src="static\images\coffee_filter.jpg" class="img-fluid" alt="Illustration">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="scroll-item">
+                        <h2>Reusable Coffee Filters</h2>
+                        <ul>
+                            <li>Key point one</li>
+                            <li>Key point two</li>
+                            <li>Key point three</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Third row, text on left, image on right (repeat the pattern as needed) -->
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="scroll-item">
+                        <h2>Eco-Friendly Cleaning Supplies</h2>
+                        <ul>
+                            <li>Insight one</li>
+                            <li>Insight two</li>
+                            <li>Insight three</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="scroll-item">
+                        <img src="static\images\eco.jpg" class="img-fluid" alt="Illustration">
+                    </div>
+                </div>
+            </div>
+
+            <!-- forth row, text on left, image on right (repeat the pattern as needed) -->
+
+            <div class="row mt-4">
+                <div class="col-md-6 text-center">
+                    <div class="scroll-item">
+                        <img src="static\images\skin.jpg" class="img-fluid" alt="Illustration">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="scroll-item">
+                        <h2>Personal Care</h2>
+                        <p>Learn about another interesting topic.</p>
+                        <ul>
+                            <li>Key point one</li>
+                            <li>Key point two</li>
+                            <li>Key point three</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- fith row, text on left, image on right (repeat the pattern as needed) -->
+
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="scroll-item">
+                        <h2>Recycled Paper Toiletries</h2>
+                        <p>Explore more areas of knowledge.</p>
+                        <ul>
+                            <li>Insight one</li>
+                            <li>Insight two</li>
+                            <li>Insight three</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="scroll-item">
+                        <img src="static\images\recycled.jpg" class="img-fluid" alt="Illustration">
+                    </div>
+                </div>
+            </div>
+
+            <!-- sixth row, text on left, image on right (repeat the pattern as needed) -->
+
+            <div class="row mt-4">
+                <div class="col-md-6 text-center">
+                    <div class="scroll-item">
+                        <img src="static\images\cotton.jpg" class="img-fluid" alt="Illustration">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="scroll-item">
+                        <h2>Organic Cotton Swabs</h2>
+                        <p>Learn about another interesting topic.</p>
+                        <ul>
+                            <li>Key point one</li>
+                            <li>Key point two</li>
+                            <li>Key point three</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more rows as needed, continuing to alternate the sides -->
+        </div>
+
+    </section>
+    <section id="about" class="about-us">
+        <div class="container">
+            <div class="row justify-content-center"> <!-- Added justify-content-center class -->
+                <div class="col-lg-10"> <!-- Adjusted column width to col-lg-10 -->
+                    <div class="about-content">
+                        <h2>The Journey to a Zero Waste Future: The Story of Bond
+                        </h2>
+                        <p> In a world overwhelmed by waste, Bond by Mahiya represents a transformative step toward sustainability.
+                             Born from a commitment to reduce environmental impact, Bond is more than just a product—it’s a movement.
+
+                          <p>  Crafted with eco-friendly materials and designed for longevity,
+                             Bond embodies Mahiya’s vision of merging modern convenience with environmental responsibility. Despite facing challenges in sourcing sustainable materials and perfecting the design, the team’s dedication turned these hurdles into opportunities for innovation.</p>
+                            </p>
+                    </div>
+                    <div class="team-section hidden" id="team-section">
+                        <h2>Our Team</h2>
+                        <ul class="list-group">
+
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div>
+                                    Mahiya
+                                </div>
+                                <img src="static\images\mahiya.jpg" class="img-fluid rounded" style="max-width: 100px;"
+                                    alt="Team Member 1">
+                            </li>
+
+                            
+                            <!-- Add more team members as needed -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div>
+        <br>
+        <br>
+    </div>
+
+    <footer id="contact" class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-unstyled">
+                        <li><strong>Address:</strong> Indian Institute of Public Administration
+                            <br>
+                            I P Estate, Ring Road, ITO
+                            <br>
+                            New Delhi-110002
+                        </li>
+                        <li><strong>Email:</strong> helpdesk.iipa@gmail.com</li>
+                        <li><strong>Phone:</strong> +91-11-23468363 </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 text-right">
+                    <ul class="list-unstyled social-icons">
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a
+                                href="https://www.instagram.com/mahiyakulsoom_/?locale=us"><i
+                                    class="fab fa-instagram"></i></a></li>
+                        <li><a
+                                href="https://www.linkedin.com/in/mahiya-kulsoom/?originalSubdomain=in"><i
+                                    class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var map = L.map('map').setView([25.3176, 82.9739], 5);
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            var locations = [
+                { lat: 25.3176, lng: 82.9739, info: 'SR Platinum English Medium School, Varanasi' },
+                //varansai
+                { lat: 22.9868, lng: 87.8550, info: 'Mount Litera Zee School, West Bengal' },
+                { lat: 24.1033, lng: 88.2590, info: 'Kendriya Vidyalaya Berhampore, West Bengal' }
+
+            ];
+
+            locations.forEach(function (location) {
+                var marker = L.marker([location.lat, location.lng]).addTo(map);
+                marker.bindPopup(location.info).openPopup();
+            });
+        });
+    </script>
+
+</body>
+
+</html>
